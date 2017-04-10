@@ -146,7 +146,7 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "php/form-process.php",
+        url: "https://go-mail.herokuapp.com/mailer",
         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
         success : function(text){
             if (text == "success"){
